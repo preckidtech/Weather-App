@@ -35,6 +35,7 @@ async function getWeather(city) {
       errorMessage.style.display = "block";
       weather.style.display = "none";
     } else {
+      errorMessage.style.display = "none"
       console.log(data);
       console.log(data.main.humidity);
       cityName.textContent = data.name;
